@@ -1,0 +1,15 @@
+.app-container {
+  background: var(--card-bg);
+  width: 100%;
+  max-width: 480px;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: var(--primary);
+}

@@ -1,0 +1,45 @@
+:root {
+  --bg-color: #f5f7fa;
+  --card-bg: #ffffff;
+  --primary: #4a90e2;
+  --accent: #50e3c2;
+  --text: #333333;
+  --muted: #888888;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  /* Degradado lineal fijo convertido en degradado animado */
+  background: linear-gradient(135deg, #4a90e2, #50e3c2, #4a90e2) no-repeat center center fixed;
+  background-size: 200% 200%;
+  
+  /* Animación */
+  animation: moveBackground 15s linear infinite;
+  
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+/* Keyframes para desplazar el gradiente */
+@keyframes moveBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
