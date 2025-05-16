@@ -45,7 +45,7 @@
 }
 
 .delete-icon {
-  font-size: 2rem; 
+  font-size: 2rem;
   color: #e74c3c;
   cursor: pointer;
 }
@@ -54,7 +54,6 @@
   color: #c0392b;
   transform: scale(1.1);
 }
-
 
 .delete-button {
   background: transparent;
@@ -126,7 +125,7 @@
 }
 .complete-icon {
   font-size: 2rem;
-  color: #2ecc71; 
+  color: #2ecc71;
   cursor: pointer;
   transition: transform 0.1s ease, color 0.2s ease;
 }
