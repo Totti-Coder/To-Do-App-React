@@ -16,8 +16,7 @@ function TodoForm(props) {
     props.onSubmit({
       // Adds a new task.
       id: Math.floor(Math.random() * 10000), //gives a random id number to the new task.
-      text: input.trim(), // el texto escrito, sin espacios al inicio ni al final.
-
+      text: input.trim(), 
       isComplete: false, // Starts as false (the task is not yet completed).
     });
     setInput(""); // After adding a new task, empty the input field.
@@ -31,8 +30,9 @@ function TodoForm(props) {
         placeholder="Add a todo"
         value={input}
         onChange={handleChange}
+        required
       />
-      <button className="todo-button">Add</button>
+      <button className="todo-button" type="submit">Add</button>
     </form>
   );
 }

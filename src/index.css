@@ -16,11 +16,11 @@
 
 body {
   font-family: 'Segoe UI', Roboto, sans-serif;
-  /* Degradado lineal fijo convertido en degradado animado */
+  /* Linear gradient turned into animation gradient */
   background: linear-gradient(135deg, #4a90e2, #50e3c2, #4a90e2) no-repeat center center fixed;
   background-size: 200% 200%;
   
-  /* Animación */
+  /* Animation */
   animation: moveBackground 15s linear infinite;
   
   color: var(--text);
@@ -31,7 +31,7 @@ body {
   min-height: 100vh;
 }
 
-/* Keyframes para desplazar el gradiente */
+/* Keyframes for desplacing the gradient */
 @keyframes moveBackground {
   0% {
     background-position: 0% 50%;

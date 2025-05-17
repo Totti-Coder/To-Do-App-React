@@ -22,10 +22,8 @@ function TodoList() {
   const removeTodo = (index) => {
     // We use .filter() to create a new array without the task at position 'index'
     // (_) represents the current value (which we don't use), and 'i' is the index of that element.
-
     // Only tasks whose index is NOT equal to the one we want to delete are kept.
     const newTodos = todos.filter((todo, i) => i !== index);
-
     // Update the state of 'todos' with the new array.
     // This causes React to re-render the list without the deleted task.
     setTodos(newTodos);
@@ -37,7 +35,7 @@ function TodoList() {
       <TodoForm onSubmit={addTodo} />
       {todos.map((todo, index) => (
         <Todo
-          key={todo.id}
+          key={todo.id} //React needs a unique key for each item in a list in order to render them efficiently.
           index={index}
           todo={todo}
           completeTodo={completeTodo}
